@@ -397,12 +397,24 @@ nav {
 }
 
 .profile-img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background: url("https://via.placeholder.com/350") no-repeat center
-    center/cover;
-  border: 5px solid var(--primary-color);
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: translateY(-5px);
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -965,6 +977,14 @@ footer {
   .skills-container {
     grid-template-columns: 1fr 1fr;
   }
+
+  .certification-card {
+    flex-direction: column;
+  }
+
+  .certification-logo {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -973,7 +993,7 @@ footer {
     right: 0;
     top: 5rem;
     flex-direction: column;
-    background: var(--white);
+    background: var(--card-bg);
     width: 100%;
     transform: translateX(100%);
     transition: var(--transition);
@@ -996,6 +1016,28 @@ footer {
   .footer-content {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-content p {
+    font-size: 1rem;
+  }
+
+  .music-player {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-image img {
+    max-width: 300px;
   }
 }
 
@@ -1026,9 +1068,35 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .project-links {
+  .project-links,
+  .certification-card {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .gallery-images {
+    height: 300px;
+  }
+
+  .gallery-nav-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .blog-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .chart-stats {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
@@ -1751,6 +1819,15 @@ footer {
   .music-player {
     bottom: 10px;
     right: 10px;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-image img {
+    max-width: 300px;
   }
 }
 
