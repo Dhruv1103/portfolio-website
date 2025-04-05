@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Modern portfolio website template",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"No tests specified\" && exit 0",
+    "build": "echo \"No build step required\" && exit 0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
