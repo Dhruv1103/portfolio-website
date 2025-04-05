@@ -120,6 +120,184 @@ The Case Studies and Testimonials sections have been removed in this base versio
 
 This base version serves as a foundation for further enhancements and customizations.
 
+## Version Control & Maintenance Strategy
+
+### Detailed Branching Strategy
+
+#### Main Branches
+
+- `master` (or `main`)
+
+  - Production-ready code
+  - Always stable and deployable
+  - Protected branch (requires pull request)
+  - Tagged with version numbers
+  - Example: `v1.0.0`, `v1.1.0`
+
+- `develop`
+  - Integration branch for features
+  - Contains latest delivered development changes
+  - Base branch for feature development
+  - May be unstable at times
+
+#### Supporting Branches
+
+1. **Feature Branches** (`feature/*`)
+
+   - Branch from: `develop`
+   - Merge back into: `develop`
+   - Naming convention: `feature/feature-name`
+   - Examples:
+     - `feature/dark-mode`
+     - `feature/contact-form`
+     - `feature/blog-integration`
+
+2. **Bugfix Branches** (`bugfix/*`)
+
+   - Branch from: `develop`
+   - Merge back into: `develop`
+   - Naming convention: `bugfix/issue-description`
+   - Examples:
+     - `bugfix/mobile-menu`
+     - `bugfix/form-validation`
+     - `bugfix/performance-issue`
+
+3. **Release Branches** (`release/*`)
+   - Branch from: `develop`
+   - Merge back into: `master` and `develop`
+   - Naming convention: `release/v1.x.x`
+   - Examples:
+     - `release/v1.0.0`
+     - `release/v1.1.0`
+
+### Git Workflow Commands
+
+#### Starting New Feature
+
+```bash
+# Update develop branch
+git checkout develop
+git pull origin develop
+
+# Create feature branch
+git checkout -b feature/your-feature-name
+
+# Make changes and commit
+git add .
+git commit -m "Add your feature"
+
+# Push feature branch
+git push origin feature/your-feature-name
+```
+
+#### Bug Fix Process
+
+```bash
+# Update develop branch
+git checkout develop
+git pull origin develop
+
+# Create bugfix branch
+git checkout -b bugfix/issue-description
+
+# Fix and commit
+git add .
+git commit -m "Fix: issue description"
+
+# Push bugfix branch
+git push origin bugfix/issue-description
+```
+
+#### Release Process
+
+```bash
+# Update develop branch
+git checkout develop
+git pull origin develop
+
+# Create release branch
+git checkout -b release/v1.x.x
+
+# Make release changes
+git add .
+git commit -m "Release v1.x.x"
+
+# Push release branch
+git push origin release/v1.x.x
+
+# After testing, merge to master
+git checkout master
+git merge release/v1.x.x
+git tag -a v1.x.x -m "Release v1.x.x"
+git push origin master --tags
+
+# Merge back to develop
+git checkout develop
+git merge release/v1.x.x
+git push origin develop
+
+# Delete release branch
+git branch -d release/v1.x.x
+git push origin --delete release/v1.x.x
+```
+
+### Best Practices
+
+1. **Branch Naming**
+
+   - Use lowercase
+   - Use hyphens for spaces
+   - Be descriptive but concise
+   - Include ticket/issue numbers if applicable
+
+2. **Commit Messages**
+
+   - Use present tense
+   - Be descriptive
+   - Reference issues/tickets
+   - Format: `type: description`
+   - Types: feat, fix, docs, style, refactor, test, chore
+
+3. **Pull Requests**
+
+   - Clear title and description
+   - Reference related issues
+   - Include screenshots for UI changes
+   - Request reviews from team members
+   - Keep PRs small and focused
+
+4. **Code Review**
+   - Review code before merging
+   - Check for:
+     - Code quality
+     - Test coverage
+     - Performance impact
+     - Security concerns
+     - Documentation updates
+
+### Maintenance Schedule
+
+#### Daily
+
+- [ ] Pull latest changes from develop
+- [ ] Review and respond to PR comments
+- [ ] Update task status
+
+#### Weekly
+
+- [ ] Code review sessions
+- [ ] Performance monitoring
+- [ ] Security checks
+- [ ] Dependency updates
+
+#### Monthly
+
+- [ ] Major version releases
+- [ ] Analytics review
+- [ ] Content updates
+- [ ] Backup verification
+- [ ] Documentation updates
+
 ---
 
 Happy customizing! If you have any questions, feel free to reach out.
