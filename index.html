@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Doe | Portfolio</title>
+    <title>Dhruv - Android Framework Developer</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -15,12 +15,21 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta
+      name="description"
+      content="Dhruv - Android Framework Developer specializing in system-level Android development, custom ROMs, and performance optimization"
+    />
+    <meta
+      name="keywords"
+      content="Android Developer, Android Framework, System Development, Custom ROM, Performance Optimization"
+    />
   </head>
   <body>
     <header>
       <div class="container">
         <nav>
-          <div class="logo">JD</div>
+          <div class="logo">DP</div>
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -53,11 +62,10 @@
       <section id="home" class="hero">
         <div class="container">
           <div class="hero-content">
-            <h1 class="typing-text">
-              Hi, I'm <span class="highlight">John Doe</span>
-            </h1>
-            <h2>Full-Stack Developer</h2>
-            <p>I build exceptional digital experiences that make an impact.</p>
+            <div class="hero-text">
+              <h1>Hi, I'm Dhruv Patel</h1>
+              <p>Android Framework Developer</p>
+            </div>
             <div class="cta-buttons">
               <a href="#projects" class="btn primary-btn">View My Work</a>
               <a href="resume.pdf" class="btn secondary-btn" download
@@ -65,13 +73,21 @@
               >
             </div>
             <div class="social-links">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/Dhruv1103" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
               <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://twitter.com/dhruv_android" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
             </div>
           </div>
           <div class="hero-image">
-            <div class="profile-img"></div>
+            <img
+              src="assets/images/profile.jpeg"
+              alt="Dhruv - Android Framework Developer"
+              class="profile-img"
+            />
           </div>
         </div>
       </section>
@@ -82,25 +98,25 @@
           <div class="about-content">
             <div class="about-text">
               <p>
-                Hello! I'm John, a passionate full-stack developer based in New
-                York City. I enjoy creating things that live on the internet,
-                whether that be websites, applications, or anything in between.
+                I'm an Android Framework Developer with over 2 years of
+                experience specializing in system-level Android development,
+                custom ROMs, and performance optimization. My expertise lies in:
               </p>
+              <ul>
+                <li>Android Framework customization and extension</li>
+                <li>System-level performance optimization</li>
+                <li>Custom ROM development</li>
+              </ul>
               <p>
-                My goal is to always build products that provide pixel-perfect,
-                performant experiences. I am constantly learning new
-                technologies and improving my skills to stay at the cutting edge
-                of web development.
+                I focus on creating efficient and reliable Android solutions
+                that enhance user experience.
               </p>
-              <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                writing tech blogs, or hiking in nature.
-              </p>
+              <a href="resume.pdf" class="btn" download>Download Resume</a>
             </div>
             <div class="about-image">
               <img
-                src="https://via.placeholder.com/400x300"
-                alt="About me image"
+                src="assets/images/profile.jpeg"
+                alt="Dhruv - Android Framework Developer"
               />
             </div>
           </div>
@@ -111,67 +127,50 @@
         <div class="container">
           <h2 class="section-title">My Skills</h2>
           <div class="skills-container">
-            <div class="skill-category">
-              <h3>Frontend</h3>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <i class="fab fa-html5"></i>
-                  <span>HTML5</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-css3-alt"></i>
-                  <span>CSS3</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-js"></i>
-                  <span>JavaScript</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-react"></i>
-                  <span>React</span>
-                </div>
+            <div class="skill-grid">
+              <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
               </div>
-            </div>
-            <div class="skill-category">
-              <h3>Backend</h3>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <i class="fab fa-node-js"></i>
-                  <span>Node.js</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-database"></i>
-                  <span>MongoDB</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-server"></i>
-                  <span>Express</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-fire"></i>
-                  <span>Firebase</span>
-                </div>
+              <div class="skill-item">
+                <i class="fab fa-kotlin"></i>
+                <span>Kotlin</span>
               </div>
-            </div>
-            <div class="skill-category">
-              <h3>Tools</h3>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <i class="fab fa-git-alt"></i>
-                  <span>Git</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-docker"></i>
-                  <span>Docker</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-aws"></i>
-                  <span>AWS</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-figma"></i>
-                  <span>Figma</span>
-                </div>
+              <div class="skill-item">
+                <i class="fab fa-android"></i>
+                <span>Android SDK</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Android Framework</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-cogs"></i>
+                <span>System Apps</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <span>System Services</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-fire"></i>
+                <span>Firebase</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-bug"></i>
+                <span>Debugging</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Problem Solving</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code-branch"></i>
+                <span>Version Control</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-project-diagram"></i>
+                <span>System Design</span>
               </div>
             </div>
           </div>
@@ -184,17 +183,21 @@
 
           <div class="projects-filter">
             <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web Apps</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="framework">
+              Framework
+            </button>
+            <button class="filter-btn" data-filter="rom">Custom ROM</button>
+            <button class="filter-btn" data-filter="optimization">
+              Optimization
+            </button>
           </div>
 
           <div class="projects-grid">
-            <div class="project-card" data-category="web">
+            <div class="project-card" data-category="framework">
               <div class="project-image">
                 <img
                   src="https://via.placeholder.com/600x400"
-                  alt="Project 1"
+                  alt="Android Framework Project"
                 />
                 <div class="project-overlay">
                   <button class="gallery-btn" data-project="project1">
@@ -203,37 +206,36 @@
                 </div>
               </div>
               <div class="project-info">
-                <h3>E-Commerce Platform</h3>
+                <h3>Android Framework Enhancement</h3>
                 <p>
-                  A fully functional e-commerce website with user
-                  authentication, product catalog, cart functionality, and
-                  payment processing.
+                  Developed and implemented custom system services to improve
+                  device performance and battery life. Added new features for
+                  system-wide dark mode implementation.
                 </p>
                 <div class="project-tech">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
-                  <span>Stripe</span>
+                  <span>AOSP</span>
+                  <span>Java</span>
+                  <span>Framework</span>
                 </div>
                 <div class="project-links">
-                  <a href="#" target="_blank" class="btn small-btn"
-                    >Live Demo</a
+                  <a
+                    href="https://github.com/Dhruv1103/android-framework-enhancements"
+                    target="_blank"
+                    class="btn small-btn"
+                    >View Code</a
                   >
-                  <a href="#" target="_blank" class="btn small-btn outline-btn"
-                    >GitHub</a
-                  >
-                  <a href="#case-studies" class="btn small-btn outline-btn"
-                    >Case Study</a
+                  <a href="#" class="project-demo btn small-btn outline-btn"
+                    >Demo</a
                   >
                 </div>
               </div>
             </div>
 
-            <div class="project-card" data-category="mobile">
+            <div class="project-card" data-category="rom">
               <div class="project-image">
                 <img
                   src="https://via.placeholder.com/600x400"
-                  alt="Project 2"
+                  alt="Custom ROM Project"
                 />
                 <div class="project-overlay">
                   <button class="gallery-btn" data-project="project2">
@@ -242,36 +244,36 @@
                 </div>
               </div>
               <div class="project-info">
-                <h3>Task Management App</h3>
+                <h3>Custom ROM Development</h3>
                 <p>
-                  A responsive task management application with drag-and-drop
-                  functionality, user authentication, and real-time updates.
+                  Built and maintained a custom Android ROM with focus on
+                  privacy features and performance optimizations. Implemented
+                  custom kernel tweaks for better battery life.
                 </p>
                 <div class="project-tech">
-                  <span>React</span>
-                  <span>Firebase</span>
-                  <span>Material UI</span>
-                  <span>Redux</span>
+                  <span>Custom ROM</span>
+                  <span>Kernel</span>
+                  <span>Java</span>
                 </div>
                 <div class="project-links">
-                  <a href="#" target="_blank" class="btn small-btn"
-                    >Live Demo</a
+                  <a
+                    href="https://github.com/Dhruv1103/custom-rom-project"
+                    target="_blank"
+                    class="btn small-btn"
+                    >View Code</a
                   >
-                  <a href="#" target="_blank" class="btn small-btn outline-btn"
-                    >GitHub</a
-                  >
-                  <a href="#case-studies" class="btn small-btn outline-btn"
-                    >Case Study</a
+                  <a href="#" class="project-demo btn small-btn outline-btn"
+                    >Demo</a
                   >
                 </div>
               </div>
             </div>
 
-            <div class="project-card" data-category="design">
+            <div class="project-card" data-category="optimization">
               <div class="project-image">
                 <img
                   src="https://via.placeholder.com/600x400"
-                  alt="Project 3"
+                  alt="Performance Optimization"
                 />
                 <div class="project-overlay">
                   <button class="gallery-btn" data-project="project3">
@@ -280,30 +282,42 @@
                 </div>
               </div>
               <div class="project-info">
-                <h3>Weather Dashboard</h3>
+                <h3>Android Performance Toolkit</h3>
                 <p>
-                  An interactive weather dashboard that displays current and
-                  forecasted weather data based on user location or search.
+                  Created a toolkit for analyzing and optimizing Android system
+                  performance. Achieved 25% reduction in app launch times
+                  through system-level improvements.
                 </p>
                 <div class="project-tech">
-                  <span>JavaScript</span>
-                  <span>Weather API</span>
-                  <span>Chart.js</span>
-                  <span>CSS3</span>
+                  <span>Java</span>
+                  <span>Kotlin</span>
+                  <span>Performance</span>
                 </div>
                 <div class="project-links">
-                  <a href="#" target="_blank" class="btn small-btn"
-                    >Live Demo</a
+                  <a
+                    href="https://github.com/Dhruv1103/android-performance-toolkit"
+                    target="_blank"
+                    class="btn small-btn"
+                    >View Code</a
                   >
-                  <a href="#" target="_blank" class="btn small-btn outline-btn"
-                    >GitHub</a
-                  >
-                  <a href="#case-studies" class="btn small-btn outline-btn"
-                    >Case Study</a
+                  <a href="#" class="project-demo btn small-btn outline-btn"
+                    >Demo</a
                   >
                 </div>
               </div>
             </div>
+          </div>
+
+          <div
+            class="projects-cta"
+            style="text-align: center; margin-top: 2rem"
+          >
+            <a
+              href="https://github.com/Dhruv1103?tab=repositories"
+              target="_blank"
+              class="btn primary-btn"
+              >View All Projects</a
+            >
           </div>
         </div>
       </section>
@@ -330,79 +344,113 @@
         <div class="container">
           <h2 class="section-title">Latest Articles</h2>
 
+          <div class="blog-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="android">
+              Android Development
+            </button>
+            <button class="category-btn" data-category="framework">
+              Framework
+            </button>
+            <button class="category-btn" data-category="tutorial">
+              Tutorials
+            </button>
+          </div>
+
           <div class="blog-grid">
-            <div class="blog-card">
+            <div class="blog-card" data-categories="android,framework">
               <div class="blog-image">
                 <img
                   src="https://via.placeholder.com/600x400"
-                  alt="Blog post 1"
+                  alt="Android Framework Development"
+                />
+              </div>
+              <div class="blog-info">
+                <div class="blog-meta">
+                  <span class="blog-date">July 1, 2023</span>
+                  <div class="blog-tags">
+                    <span class="tag">Android</span>
+                    <span class="tag">Framework</span>
+                  </div>
+                </div>
+                <h3>Deep Dive into Android System Services</h3>
+                <p>
+                  Understanding the core components of Android's system services
+                  architecture. How system services communicate with apps and
+                  manage device resources.
+                </p>
+                <div class="blog-footer">
+                  <a href="#" class="read-more"
+                    >Read More <i class="fas fa-arrow-right"></i
+                  ></a>
+                  <span class="read-time">12 min read</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card" data-categories="tutorial,android">
+              <div class="blog-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Android App Development"
                 />
               </div>
               <div class="blog-info">
                 <div class="blog-meta">
                   <span class="blog-date">June 15, 2023</span>
-                  <span class="blog-category">Development</span>
+                  <div class="blog-tags">
+                    <span class="tag">Tutorial</span>
+                    <span class="tag">Android</span>
+                  </div>
                 </div>
-                <h3>Getting Started with React Hooks</h3>
+                <h3>Mastering Android Performance Optimization</h3>
                 <p>
-                  Learn how to use React Hooks to write more concise and
-                  functional components in your React applications.
+                  Essential techniques for optimizing Android app performance.
+                  From memory management to smooth UI rendering and efficient
+                  background processing.
                 </p>
-                <a href="#" class="read-more"
-                  >Read More <i class="fas fa-arrow-right"></i
-                ></a>
+                <div class="blog-footer">
+                  <a href="#" class="read-more"
+                    >Read More <i class="fas fa-arrow-right"></i
+                  ></a>
+                  <span class="read-time">15 min read</span>
+                </div>
               </div>
             </div>
 
-            <div class="blog-card">
+            <div class="blog-card" data-categories="android,development">
               <div class="blog-image">
                 <img
                   src="https://via.placeholder.com/600x400"
-                  alt="Blog post 2"
+                  alt="Android Development"
                 />
               </div>
               <div class="blog-info">
                 <div class="blog-meta">
-                  <span class="blog-date">May 22, 2023</span>
-                  <span class="blog-category">Design</span>
+                  <span class="blog-date">May 30, 2023</span>
+                  <div class="blog-tags">
+                    <span class="tag">Android</span>
+                    <span class="tag">Development</span>
+                  </div>
                 </div>
-                <h3>UI/UX Principles Every Developer Should Know</h3>
+                <h3>Building Robust Android Applications</h3>
                 <p>
-                  Explore essential design principles that can help developers
-                  create more user-friendly and visually appealing interfaces.
+                  Best practices for developing reliable and maintainable
+                  Android applications. From architecture patterns to testing
+                  strategies.
                 </p>
-                <a href="#" class="read-more"
-                  >Read More <i class="fas fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-
-            <div class="blog-card">
-              <div class="blog-image">
-                <img
-                  src="https://via.placeholder.com/600x400"
-                  alt="Blog post 3"
-                />
-              </div>
-              <div class="blog-info">
-                <div class="blog-meta">
-                  <span class="blog-date">April 10, 2023</span>
-                  <span class="blog-category">DevOps</span>
+                <div class="blog-footer">
+                  <a href="#" class="read-more"
+                    >Read More <i class="fas fa-arrow-right"></i
+                  ></a>
+                  <span class="read-time">10 min read</span>
                 </div>
-                <h3>Optimizing Your CI/CD Pipeline with GitHub Actions</h3>
-                <p>
-                  A step-by-step guide to setting up and optimizing continuous
-                  integration and deployment workflows using GitHub Actions.
-                </p>
-                <a href="#" class="read-more"
-                  >Read More <i class="fas fa-arrow-right"></i
-                ></a>
               </div>
             </div>
           </div>
 
           <div class="blog-cta">
-            <a href="#" class="btn primary-btn">View All Articles</a>
+            <a href="#blog" class="btn primary-btn">View All Articles</a>
           </div>
         </div>
       </section>
@@ -417,19 +465,13 @@
               <div class="certification-logo">
                 <img
                   src="https://via.placeholder.com/150"
-                  alt="AWS Certification"
+                  alt="Android Development"
                 />
               </div>
               <div class="certification-info">
-                <h3>AWS Certified Solutions Architect</h3>
-                <p class="certification-issuer">Amazon Web Services</p>
-                <p class="certification-date">
-                  Issued: January 2023 • Expires: January 2026
-                </p>
-                <p class="certification-id">Credential ID: AWS-ASA-12345</p>
-                <a href="#" class="btn small-btn outline-btn" target="_blank"
-                  >Verify</a
-                >
+                <h3>Advanced Android Development</h3>
+                <p class="certification-issuer">Udemy</p>
+                <p class="certification-date">2023</p>
               </div>
             </div>
 
@@ -437,20 +479,34 @@
               <div class="certification-logo">
                 <img
                   src="https://via.placeholder.com/150"
-                  alt="Google Certification"
+                  alt="Android Architecture"
                 />
               </div>
               <div class="certification-info">
-                <h3>Google Professional Cloud Developer</h3>
-                <p class="certification-issuer">Google Cloud</p>
-                <p class="certification-date">
-                  Issued: March 2022 • Expires: March 2024
-                </p>
-                <p class="certification-id">Credential ID: GPCD-98765</p>
-                <a href="#" class="btn small-btn outline-btn" target="_blank"
-                  >Verify</a
-                >
+                <h3>Android Architecture Masterclass</h3>
+                <p class="certification-issuer">Udemy</p>
+                <p class="certification-date">2022</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="github" class="github">
+        <div class="container">
+          <h2 class="section-title">GitHub Activity</h2>
+          <div class="github-stats">
+            <img
+              src="https://ghchart.rshah.org/Dhruv1103"
+              alt="GitHub Contribution Chart"
+            />
+            <div class="github-info">
+              <p>
+                Check out my GitHub profile for more projects and contributions.
+              </p>
+              <a href="https://github.com/Dhruv1103" target="_blank" class="btn"
+                >View GitHub Profile</a
+              >
             </div>
           </div>
         </div>
@@ -469,15 +525,13 @@
               <div class="contact-details">
                 <div class="contact-item">
                   <i class="fas fa-envelope"></i>
-                  <a href="mailto:hello@johndoe.com">hello@johndoe.com</a>
-                </div>
-                <div class="contact-item">
-                  <i class="fas fa-phone"></i>
-                  <a href="tel:+1234567890">+1 (234) 567-890</a>
+                  <a href="mailto:dhruvpatel1103@gmail.com"
+                    >dhruvpatel1103@gmail.com</a
+                  >
                 </div>
                 <div class="contact-item">
                   <i class="fas fa-map-marker-alt"></i>
-                  <span>New York City, NY</span>
+                  <span>Mumbai, India</span>
                 </div>
               </div>
             </div>
@@ -521,7 +575,7 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <div class="footer-logo">JD</div>
+          <div class="footer-logo">DP</div>
           <div class="footer-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -531,13 +585,20 @@
             <a href="#contact">Contact</a>
           </div>
           <div class="footer-social">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/Dhruv1103" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/dhruv_android" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2023 John Doe. All Rights Reserved.</p>
+          <p>
+            &copy; 2023 Dhruv - Android Framework Developer. All Rights
+            Reserved.
+          </p>
         </div>
 
         <!-- Music Player -->
@@ -555,26 +616,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- GitHub Activity Chart -->
-    <div id="github-chart-modal" class="modal">
-      <div class="modal-content github-modal">
-        <span class="close-modal">&times;</span>
-        <h3>My GitHub Contributions</h3>
-        <div id="github-chart-container">
-          <div id="github-loading">
-            <i class="fas fa-spinner fa-spin"></i> Loading GitHub data...
-          </div>
-          <div id="github-chart"></div>
-        </div>
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          class="btn secondary-btn"
-          >View GitHub Profile</a
-        >
-      </div>
-    </div>
 
     <!-- Custom 404 Page (Hidden) -->
     <div id="error-page" style="display: none">
